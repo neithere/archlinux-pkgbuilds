@@ -1,10 +1,13 @@
 # Maintainer: Andy Mikhaylenko <neithere@gmail.com>
 # Contributor: brenton <brenton@taylorbyte.com>
+#
+# TODO: split into LPR and cupswrapper (as some other packages in AUR are)
+#
 pkgname=brother-mfc7860dw
 _printername=MFC7860DW
 pkgver="2.0.4"
 lprpkgver="2.1.0"
-pkgrel=1
+pkgrel=2
 pkgdesc="CUPS and LPR driver for Brother MFC7860 printer"
 arch=('i686' 'x86_64')
 license=('custom:Brother Industries')
