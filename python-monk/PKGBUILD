@@ -1,10 +1,10 @@
 # Maintainer: Andrey Mikhaylenko <neithere at gmail dot com>
 pkgname=python-monk
-pkgver=0.10.0
+pkgver=0.11.0
 pkgrel=1
 pkgdesc="An unobtrusive data modeling, manipulation and validation library (MongoDB ODM included)"
 arch=(any)
-url="http://bitbucket.org/neithere/monk/"
+url="http://github.com/neithere/monk/"
 license=('LGPL3')
 depends=('python>=3.2')
 makedepends=('python-distribute')
