@@ -1,5 +1,5 @@
 # Maintainer: Andrey Mikhaylenko <neithere at gmail dot com>
-_python=python
+_python=python2
 _distname=sandman
 pkgname=$_python-$_distname
 pkgver=0.7.1
