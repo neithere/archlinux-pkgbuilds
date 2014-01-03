@@ -2,7 +2,7 @@
 # Contributor: Moritz Lipp <mlq@pwmt.org>
 _python=python
 _distname=Flask-Admin
-pkgname=$_python-${_distname,,}
+pkgname=$_python-flask-admin
 pkgver=1.0.7
 pkgrel=1
 pkgdesc="Simple and extensible admin interface framework for Flask"
