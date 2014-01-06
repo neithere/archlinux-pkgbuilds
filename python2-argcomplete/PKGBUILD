@@ -2,7 +2,7 @@
 _python=python2
 _distname=argcomplete
 pkgname=$_python-$_distname
-pkgver=0.6.6
+pkgver=0.6.7
 pkgrel=1
 pkgdesc="Bash completion for argparse"
 arch=(any)
@@ -17,7 +17,7 @@ backup=()
 options=(!emptydirs)
 install=
 source=(http://pypi.python.org/packages/source/${_distname:0:1}/$_distname/$_distname-${pkgver}.tar.gz)
-md5sums=('58578453071918e8b04a3556abc57135')
+md5sums=('d9faf5e522f15b829588cbca4859563c')
 
 package() {
    cd "${srcdir}/$_distname-${pkgver}"
