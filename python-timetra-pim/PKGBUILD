@@ -29,5 +29,5 @@ md5sums=('181c910b22ce13ecad6101a8b3e94d28')
 
 package() {
   cd "$srcdir/$_distname-$pkgver"
-  $_python setup.py install --root="$pkgdir/" --prefix=/usr --optimize=1
+  $_python setup.py install --root="$pkgdir" --optimize=1
 }
