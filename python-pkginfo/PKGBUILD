@@ -1,16 +1,15 @@
 # Maintainer: Andrey Mikhaylenko <neithere at gmail dot com>
-_python=python2
-_distname=devpi
+_python=python
+_distname=pkginfo
 pkgname=${_python}-${_distname}
-pkgver=1.2.1
-pkgrel=3
-pkgdesc="github-style pypi index server and packaging meta tool."
+pkgver=1.2b1
+pkgrel=1
+pkgdesc="Query metadatdata from sdists / bdists / installed packages"
 arch=(any)
-url="http://doc.devpi.net"
-license=('MIT')
+url="http://pythonhosted.org//pkginfo"
+license=('Python')
 depends=(
-    "${pkgname}-server>=1.2.1"
-    "${pkgname}-client>=1.2.1"
+    "${_python}"
 )
 makedepends=("${_python}-distribute")
 optdepends=()
@@ -20,8 +19,8 @@ replaces=()
 backup=()
 options=(!emptydirs)
 install=
-source=(http://pypi.python.org/packages/source/d/${_distname}/${_distname}-${pkgver}.tar.gz)
-md5sums=('4268447615eb40a94d50079f5d32a38b')
+source=(http://pypi.python.org/packages/source/${_distname:0:1}/${_distname}/${_distname}-${pkgver}.tar.gz)
+md5sums=('54511cf8b03eb08220fa9ec9e53f5d31')
 
 package() {
     cd "${srcdir}/${_distname}-${pkgver}"

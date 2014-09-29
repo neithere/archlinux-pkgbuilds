@@ -1,5 +1,5 @@
 # Maintainer: Andrey Mikhaylenko <neithere at gmail dot com>
-_python=python
+_python=python2
 _distname=execnet
 
 pkgname=${_python}-${_distname}

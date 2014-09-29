@@ -1,0 +1,30 @@
+# Maintainer: Andrey Mikhaylenko <neithere at gmail dot com>
+_python=python
+_distname=pyramid-chameleon
+pkgname=${_python}-${_distname}
+pkgver=0.3
+pkgrel=1
+pkgdesc="These are bindings for the Chameleon templating system for the Pyramid web framework"
+arch=(any)
+url="https://github.com/Pylons/pyramid_chameleon"
+license=('BSD-derived')
+depends=(
+    "${_python}"
+    "${_python}-pyramid"
+    "${_python}-chameleon"
+)
+makedepends=("${_python}-distribute")
+optdepends=()
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=(!emptydirs)
+install=
+source=(http://pypi.python.org/packages/source/p/pyramid_chameleon/pyramid_chameleon-${pkgver}.tar.gz)
+md5sums=('5bb5938356dfd13fce06e095f132e137')
+
+package() {
+    cd "${srcdir}/pyramid_chameleon-${pkgver}"
+    ${_python} setup.py install --root="${pkgdir}" --optimize=1 || exit 1
+}
